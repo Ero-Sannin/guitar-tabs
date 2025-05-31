@@ -1,46 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Basic Nepali Chords</title>
-  <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Nepali Chords</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
+
 <body>
-  <header>
-    <img src="logo.jpg" alt="Logo" class="logo">
-    Basic Nepali Chords
-  </header>
+    <header>
+        <img src="logo.jpg" alt="Logo" class="logo">
+        Basic Nepali Chords
+    </header>
 
-  <div class="search-bar">
-    <input type="text" placeholder="Search for a song..." id="searchInput">
-  </div>
-
-  <div class="song-list" id="songList">
-    <div class="song">
-      <h2><a href="wonderwall.html">Wonderwall - Oasis</a></h2>
+    <div class="search-bar">
+        <input type="text" placeholder="Search for a song..." id="searchInput">
     </div>
 
-    <div class="song">
-      <h2><a href="hotel_california.html">Hotel California - Eagles</a></h2>
+    <div class="song-list" id="songList">
+        <div class="song">
+            <h2><a href="wonderwall.html">Wonderwall - Oasis</a></h2>
+        </div>
+
+        <div class="song">
+            <h2><a href="hotel_california.html">Hotel California - Eagles</a></h2>
+        </div>
     </div>
-  </div>
 
-  <footer>
-    © 2025 GuitarTab Archive
-  </footer>
+    <footer>
+        © 2025 GuitarTab Archive
+    </footer>
 
-  <script>
-    const searchInput = document.getElementById('searchInput');
-    const songs = document.querySelectorAll('.song');
+    <script src="script.js">
 
-    searchInput.addEventListener('input', function () {
-      const query = this.value.toLowerCase();
-      songs.forEach(song => {
-        const title = song.textContent.toLowerCase();
-        song.style.display = title.includes(query) ? 'block' : 'none';
-      });
-    });
-  </script>
+    </script>
 </body>
+
 </html>
